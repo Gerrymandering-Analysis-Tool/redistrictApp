@@ -1,6 +1,6 @@
 var mapStyle = [{
   'stylers': [{
-    'visibility': 'on'
+    'visibility': 'off'
   }]
 }, {
   'featureType': 'landscape',
@@ -8,7 +8,7 @@ var mapStyle = [{
   'stylers': [{
     'visibility': 'on'
   }, {
-    'color': '#fcfcfc'
+    'color': '#808080'
   }]
 }, {
   'featureType': 'water',
@@ -16,7 +16,7 @@ var mapStyle = [{
   'stylers': [{
     'visibility': 'on'
   }, {
-    'color': '#bfd4ff'
+    'color': '#ffffff'
   }]
 }];
 var map;
