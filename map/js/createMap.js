@@ -33,6 +33,7 @@ function initMap() {
       lng: -100
     },
     zoom: 4,
+    disableDefaultUI: true,
     styles: mapStyle
   });
 
