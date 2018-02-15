@@ -31,27 +31,13 @@ function mouseOutOfRegion(e) {
 }
 
 function mouseClick(e) {
-  if(zoomed){
+  if (zoomed) {
     map.setCenter(new google.maps.LatLng(40, -100));
     map.setZoom(4);
     zoomed = false;
-  }else{
+  } else {
     map.setZoom(7);
     map.setCenter(e.latLng);
     zoomed = true;
   }
-  var drawLayer = new google.maps.Data({map:map});
-  drawLayer.loadGeoJson('json/l.geojson');
-  drawLayer = new google.maps.Data({map:map});
-        drawLayer.setStyle(function(feature) {
-
-                  return /** @type {google.maps.Data.StyleOptions} */({
-                      fillColor: 'blue',
-                      strokeColor: 'blue',
-                      strokeWeight: 1.3,
-                      fillOpacity:0.7
-
-                  });
-                }
-              );
-  }
+}
