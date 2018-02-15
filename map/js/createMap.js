@@ -34,7 +34,9 @@ function initMap() {
     },
     zoom: 4,
     disableDefaultUI: true,
-    styles: mapStyle
+    styles: mapStyle,
+    gestureHandling: 'cooperative',
+    disableDoubleClickZoom: true
   });
 
 
