@@ -31,6 +31,7 @@ function mouseOutOfRegion(e) {
 }
 
 function mouseClick(e) {
+  console.log(e.feature.getProperty('NAME'));
   if(zoomed){
     map.setCenter(new google.maps.LatLng(40, -100));
     map.setZoom(4);
