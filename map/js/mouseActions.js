@@ -35,9 +35,12 @@ function mouseClick(e) {
     map.setCenter(new google.maps.LatLng(40, -100));
     map.setZoom(4);
     zoomed = false;
+    e.feature.getProperty('isColorful',true);
+
   } else {
     map.setZoom(7);
     map.setCenter(e.latLng);
     zoomed = true;
+    e.feature.getProperty('isColorful',false);
   }
 }
