@@ -1,0 +1,108 @@
+/* Dan edited */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #545454;
+    overflow: hidden;
+    height: 40px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    margin-top: -15px;
+    float: right;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    /* background-color: black; */
+    color: white;
+    height: 35px;
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    /* background-color: #4CAF50; */
+    color: white;
+    height: 35px;
+
+}
+.btn{
+  margin-top: 6px;
+  border-radius: 40%;
+  -webkit-border-radius: 40%;
+  -webkit-border-top-left-radius: 40%;
+  -webkit-border-top-right-radius: 40%;
+  -webkit-border-bottom-left-radius: 40%;
+  -webkit-border-bottom-right-radius: 40%;
+  background-color: #545454;
+  -webkit-border-color: #545454;
+  color: #d3d3d3;
+  height: 27px;
+  border-color: #545454;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #696969;
+    color:white;
+}
+
+.button a:hover {
+  color: white;
+}
+
+.Login {
+  background-color: #696969;
+  border-radius: 10px;
+  border-color: #545454;
+  border: none;
+}
+
+.Signup{
+  background-color: #545454;
+  border-radius: 10px;
+  border-color: #696969;
+  border: none;
+}
+
+.Save{
+  background-color: #696969;
+  border-radius: 10px;
+  border-color: #545454;
+  border: none;
+}
+
+.Download{
+  border: none;
+}
+
+.Share{
+  border: none;
+  padding-left: -4px;
+}
+
+.Logo{
+  float: left;
+  color: white;
+}
+
+.material-icons.logo {
+  font-size: 36px;
+  color: white;
+  margin-top: 2px;
+}
+
+.Brandname{
+  color: #d3d3d3;
+  margin-top: 3px;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+}

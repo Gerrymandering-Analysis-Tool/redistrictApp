@@ -19,14 +19,14 @@ html, body,#map{
 }
 
 #controls {
-  top: 10px;
+  top: 50px;
   left: 110px;
   width: 360px;
   height: 45px;
 }
 
 #data-box {
-  top: 10px;
+  top: 50px;
   left: 500px;
   height: 45px;
   line-height: 45px;
