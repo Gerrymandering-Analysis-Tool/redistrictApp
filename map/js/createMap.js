@@ -8,7 +8,7 @@ var mapStyle = [{
   'stylers': [{
     'visibility': 'on'
   }, {
-    'color': '#808080'
+    'color': '#F0F0F0'
   }]
 }, {
   'featureType': 'water',
