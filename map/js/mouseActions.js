@@ -16,7 +16,7 @@ function mouseInToRegion(e) {
   document.getElementById('data-value').textContent =
     e.feature.getProperty('census_variable').toLocaleString();
   document.getElementById('data-box').style.display = 'block';
-  document.getElementById('data-caret').style.display = 'block';
+  document.getElementById('data-caret').  style.display = 'block';
   document.getElementById('data-caret').style.paddingLeft = percent + '%';
 }
 
