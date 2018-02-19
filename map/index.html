@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+
   <script src="js/styler.js"></script>
   <script src="js/createMap.js"></script>
   <script src="js/loadData.js"></script>
@@ -18,16 +19,40 @@
 
 <body>
   <div class="topnav">
-    <div class ="Logo">
-      <a href="http://www.google.com"><p class="Brandname">reDistrict</p></a>
+    <div class="Logo">
+      <a href="http://www.google.com">
+        <p class="Brandname">reDistrict</p>
+      </a>
       <a href="http://www.google.com"><i class="material-icons logo">timeline</i></a>
     </div>
-    <a href="http://www.google.com"><button class="btn Signup">Sign Up</button></a>
-    <a href="http://www.google.com"><button class="btn Login">Log In</button></a>
+    <!-- <a href="http://www.google.com"><button class="btn Signup">Sign Up</button></a> -->
+    <div class="dropdown">
+      <a><button class="btn Login">Log In</button></a>
+      <div class="dropdown-content">
+        <div class="w3-card-4">
+          <div class="w3-container">
+            <h2 class="Login-Card-Heading">Login</h2><br>
+            <div class="Login-icons center-div">
+              <a href="http://www.google.com" class="google-login-icon"><img src="img/google-signin.svg"></a>
+              <a href="http://www.google.com" class="fb-login-icon"><img src="img/facebook-signin.svg" height="46px" width="46px"></a>
+            </div>
+
+          </div>
+
+          <form class="w3-container center-div">
+            <input class="w3-input w3-border w3-light-grey" type="email" placeholder="Email"><br>
+            <input class="w3-input w3-border w3-light-grey" type="password" placeholder="Password"><br>
+            <div class="center-div"><button class="btn login-btn">Login</button></div>
+          </form><br>
+          <div class ="not-member center-div"><label class= "not-mamber not-member-label">Not a member yet?</label></div>
+
+        </div>
+      </div>
+    </div>
     <a href="http://www.google.com"><button class="btn Share"><i class="material-icons">share</i></button></a>
     <a href="http://www.google.com"><button class="btn Download"><i class="material-icons">file_download</i></button></a>
     <a href="http://www.google.com"><button class="btn Save">Save as</button></a>
- </div>
+  </div>
 
   <div id="controls" class="nicebox">
     <div>

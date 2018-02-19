@@ -2,7 +2,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #545454;
-    overflow: hidden;
+    overflow: visible;
     height: 40px;
 }
 
@@ -17,14 +17,15 @@
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
     border: none;
+    height: 30px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
     /* background-color: black; */
     color: white;
-    height: 35px;
-
+    height: 20px;
+    /* -webkit-overflow: hidden */
 }
 
 /* Add a color to the active/current link */
@@ -37,17 +38,13 @@
 .btn{
   margin-top: 6px;
   border-radius: 40%;
-  -webkit-border-radius: 40%;
-  -webkit-border-top-left-radius: 40%;
-  -webkit-border-top-right-radius: 40%;
-  -webkit-border-bottom-left-radius: 40%;
-  -webkit-border-bottom-right-radius: 40%;
   background-color: #545454;
   -webkit-border-color: #545454;
   color: #d3d3d3;
   height: 27px;
   border-color: #545454;
   cursor: pointer;
+  /* position:relative; */
 }
 
 .btn:hover {
@@ -106,3 +103,113 @@
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
 }
+/* The dropdown container */
+.dropdown {
+  float: right;
+
+  /* overflow: hidden;
+  -webkit-overflow: hidden; */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  top: 40px;
+  margin-left: -270px;
+  width: 325px;
+  float: right;
+  /* display:none; */
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+ .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  /* -webkit-overflow: hidden */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:block;
+  /* -webkit-overflow: hidden */
+
+}
+
+.w3-container{
+  height: 200px;
+  width: 300px;
+  /* -webkit-overflow: hidden */
+}
+
+.w3-container.center-div{
+  top: -60px;
+  width:80%;
+  height: auto;
+}
+
+.not-member{
+  position: relative;
+  width:100%;
+}
+.not-member.not-member-label{
+  position: absolute;
+  left:-100px;
+}
+
+.Login-Card-Heading{
+  /* margin-left: 125px; */
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #545454;
+}
+
+.Login-icons a{
+  width: 46px;
+  padding-left: 4px;
+  padding-right: 0px;
+  float: left;
+  height: 0px;
+}
+
+.Login-icons a:hover{
+  background-color: inherit;
+}
+
+.center-div{
+  margin: 0 auto;
+  width: 100px;
+}
+
+.btn.login-btn{
+
+  border-radius: 0px;
+  margin-left: 30px;
+  border: none;
+  color: white;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: left;
+  }
