@@ -1,5 +1,5 @@
-/* Dan edited */
-/* Add a black background color to the top navigation */
+
+/* Add a background color to the top navigation */
 .topnav {
     background-color: #545454;
     overflow: visible;
@@ -22,19 +22,17 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    /* background-color: black; */
     color: white;
     height: 20px;
-    /* -webkit-overflow: hidden */
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    /* background-color: #4CAF50; */
     color: white;
     height: 35px;
 
 }
+/* for buttons in the navbar */
 .btn{
   margin-top: 6px;
   border-radius: 40%;
@@ -44,12 +42,11 @@
   height: 27px;
   border-color: #545454;
   cursor: pointer;
-  /* position:relative; */
 }
 
 .btn:hover {
-    background-color: #696969;
-    color:white;
+  background-color: #696969;
+  color:white;
 }
 
 .button a:hover {
@@ -106,9 +103,6 @@
 /* The dropdown container */
 .dropdown {
   float: right;
-
-  /* overflow: hidden;
-  -webkit-overflow: hidden; */
 }
 
 
@@ -118,7 +112,7 @@
   margin-left: -270px;
   width: 325px;
   float: right;
-  /* display:none; */
+  display:none;
   position: absolute;
   background-color: white;
   min-width: 160px;
@@ -139,20 +133,17 @@
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
-  /* -webkit-overflow: hidden */
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display:block;
-  /* -webkit-overflow: hidden */
-
 }
 
+/* for the dropdown card */
 .w3-container{
   height: 200px;
   width: 300px;
-  /* -webkit-overflow: hidden */
 }
 
 .w3-container.center-div{
@@ -161,17 +152,39 @@
   height: auto;
 }
 
-.not-member{
-  position: relative;
-  width:100%;
+
+#not-member-label{
+  float: left;
+  display: inline-block;
+  margin-right: 0px;
+  margin-left: 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: grey;
 }
-.not-member.not-member-label{
-  position: absolute;
-  left:-100px;
+
+#signup-text{
+  float: left;
+  margin-left: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: grey;
+  height: 40px;
+}
+
+#signup-text:hover{
+  background-color: white;
+  color: black;
+}
+
+.sidgnup-text {
+  display:inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3px;
+  color: white;
 }
 
 .Login-Card-Heading{
-  /* margin-left: 125px; */
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #545454;
@@ -195,7 +208,6 @@
 }
 
 .btn.login-btn{
-
   border-radius: 0px;
   margin-left: 30px;
   border: none;
