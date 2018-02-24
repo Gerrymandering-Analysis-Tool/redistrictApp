@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,11 +14,11 @@
   <script src="js/login.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <title>Mashups with google.maps.Data</title>
+  <title>Redistricting Map</title>
 
 </head>
-
 <body>
+  <input id="pac-input" class="searchcontrols" type="text" placeholder="Search...">
   <div class="topnav">
     <div class="Logo">
       <a href="http://www.google.com">
@@ -26,7 +26,6 @@
       </a>
       <a href="http://www.google.com"><i class="material-icons logo">timeline</i></a>
     </div>
-    <!-- <a href="http://www.google.com"><button class="btn Signup">Sign Up</button></a> -->
     <div class="dropdown">
       <a><button class="btn Login" id="nav-btn-login">Login</button></a>
       <div class="dropdown-content">
@@ -55,7 +54,6 @@
     <a href="http://www.google.com"><button class="btn Download"><i class="material-icons">file_download</i></button></a>
     <a href="http://www.google.com"><button class="btn Save">Save as</button></a>
   </div>
-
   <div id="controls" class="nicebox">
     <div>
       <select id="census-variable">
@@ -79,8 +77,10 @@
   </div>
   <div id="map"></div>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnloRnGzyLOG5qOhq9j2-C2wFzIbdAF2s&callback=initMap">
-  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnloRnGzyLOG5qOhq9j2-C2wFzIbdAF2s&callback=initMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnloRnGzyLOG5qOhq9j2-C2wFzIbdAF2s&libraries=places&callback=initAutocomplete"
+         async defer></script>
 </body>
 
 </html>

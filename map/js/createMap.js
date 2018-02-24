@@ -39,15 +39,11 @@ function initMap() {
     disableDoubleClickZoom: true
   });
 
-
   // set up the style rules and events for google.maps.Data
   map.data.setStyle(styleFeature);
   map.data.addListener('mouseover', mouseInToRegion);
   map.data.addListener('mouseout', mouseOutOfRegion);
   map.data.addListener('click', mouseClick);
-
-
-
 
   // wire up the button
   var selectBox = document.getElementById('census-variable');
