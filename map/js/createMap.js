@@ -39,10 +39,6 @@ function initMap() {
     disableDoubleClickZoom: true
   });
 
-  //var input = document.getElementById('pac-input');
-  //var searchBox = new google.maps.places.SearchBox(input);
-  //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
   // set up the style rules and events for google.maps.Data
   map.data.setStyle(styleFeature);
   map.data.addListener('mouseover', mouseInToRegion);
