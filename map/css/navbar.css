@@ -89,6 +89,16 @@
   padding-left: -4px;
 }
 
+.Export{
+  border: none;
+  padding-left: -4px;
+}
+
+.Favorite{
+  border: none;
+  padding-left: -4px;
+}
+
 .Logo{
   float: left;
   color: white;
